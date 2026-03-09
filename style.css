@@ -48,6 +48,28 @@ a {
   margin-bottom: 1rem;
 }
 
+/* Mobile screen */
+@media (max-width:768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: black;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
